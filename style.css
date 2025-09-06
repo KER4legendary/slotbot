@@ -1,0 +1,19 @@
+/* style.css */
+:root{
+    --bg:#0e0f16;
+  }
+  
+  html,body{
+    height:100%;
+    margin:0;
+    background:var(--bg);
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  }
+  
+  #gameCanvas{
+    display:block;
+    width:100vw;
+    height:100vh;
+    /* high-dpi handled by slot.js which sets canvas resolution */
+  }
+  

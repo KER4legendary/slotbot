@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Однорукий бандит — WebApp</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Telegram WebApp может положить window.Telegram сюда -->
+  <canvas id="gameCanvas"></canvas>
+
+  <script src="slot.js"></script>
+  <script>
+    // (опционально) минимальная инициализация Telegram WebApp API
+    if (window.Telegram && window.Telegram.WebApp) {
+      window.Telegram.WebApp.expand(); // попросить расширить экран (если нужно)
+      // const initData = window.Telegram.WebApp.initData;
+    }
+  </script>
+</body>
+</html>
